@@ -77,6 +77,9 @@ correct). Benchmark 1 shows the real cost of this design's branch resolution pol
 | Slice Registers | 30 | 165 |
 | CARRY4 | 16 | 16 |
 
+<img width="1918" height="887" alt="device_layout_v2" src="https://github.com/user-attachments/assets/2699795c-75a7-452e-b4c6-f6329f17e65b" />
+
+
 **Post-implementation (place & route) timing:**
 
 | Metric | Single-cycle | Pipelined |
@@ -84,6 +87,8 @@ correct). Benchmark 1 shows the real cost of this design's branch resolution pol
 | WNS | 4.835 ns | 4.840 ns |
 | Critical path delay | 5.165 ns | 5.160 ns |
 | **Fmax** | **~193.6 MHz** | **~193.8 MHz** |
+
+<img width="1918" height="760" alt="timing_summary" src="https://github.com/user-attachments/assets/f357d800-07e7-453e-8026-fd82e5e73287" />
 
 **Key finding:** at the synthesis level, the pipelined core showed a modest Fmax
 advantage (~216 MHz vs ~208 MHz) from shorter per-stage logic depth. After full
