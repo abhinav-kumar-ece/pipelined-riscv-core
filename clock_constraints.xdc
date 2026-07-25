@@ -1,1 +1,2 @@
+# Clock constraint for RV32I pipelined core — 100MHz clock (10ns period)
 create_clock -period 10.000 -name clk -waveform {0.000 5.000} [get_ports -filter { NAME =~  "*clk*" && DIRECTION == "IN" }]
