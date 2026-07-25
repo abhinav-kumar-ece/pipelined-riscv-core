@@ -1,3 +1,5 @@
+// Testbench for control unit — verifies opcode decoding
+   // and control signal generation for all instruction types
 // =============================================================
 // control_unit_tb.v — testbench for control_unit.v
 // Feeds in the opcode/funct3/funct7 for one real instruction of
