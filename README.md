@@ -108,3 +108,5 @@ more LUTs and ~5.5x more registers for the same ISA functionality.
 
 Core RTL design, verification, and synthesis/timing analysis are complete. A written
 report/paper discussing methodology and results in full is in progress.
+## Testing
+   Verified with individual module testbenches (ALU, register file, memory, immediate generator, control unit) plus integration tests for branch types, pipeline flush, and loop execution.
