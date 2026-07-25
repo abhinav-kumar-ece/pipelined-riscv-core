@@ -1,3 +1,5 @@
+// Testbench for loop execution — verifies correct pipeline
+   // behavior across repeated branch-back iterations
 // =============================================================
 // riscv_loop_tb.v — tests a real loop with a BACKWARD branch
 //
