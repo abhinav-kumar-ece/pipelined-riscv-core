@@ -1,3 +1,4 @@
+// Data memory — byte-addressable RAM for load/store instructions
 // =============================================================
 // dmem.v — Data memory for RV32I loads/stores
 // Byte-addressable, supports byte/halfword/word width, and
