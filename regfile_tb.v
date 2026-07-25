@@ -1,3 +1,4 @@
+// Testbench for register file — verifies read/write behavior
 // =============================================================
 // regfile_tb.v — self-checking testbench for regfile.v
 // =============================================================
