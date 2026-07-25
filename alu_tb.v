@@ -1,3 +1,4 @@
+// Testbench for ALU module — verifies all operations
 // =============================================================
 // alu_tb.v — self-checking testbench for alu.v
 // Not synthesizable hardware — simulation only.
