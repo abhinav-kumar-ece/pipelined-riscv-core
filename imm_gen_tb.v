@@ -1,3 +1,4 @@
+// Testbench for immediate generator — verifies sign extension
 // =============================================================
 // imm_gen_tb.v — testbench for imm_gen.v
 // Each test instruction was hand-encoded bit-by-bit from a real
