@@ -1,3 +1,4 @@
+// Testbench for instruction memory — verifies instruction fetch
 // =============================================================
 // imem_tb.v — testbench for imem.v
 // Requires program.hex to be added as a Simulation Source too,
