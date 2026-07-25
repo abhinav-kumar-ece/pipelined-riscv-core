@@ -1,3 +1,5 @@
+// Testbench for pipeline flush — verifies correct instruction
+   // squashing on mispredicted/taken branches
 // =============================================================
 // riscv_flush_tb.v — tests control-hazard flush logic
 //
