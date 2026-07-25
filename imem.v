@@ -1,3 +1,4 @@
+// Instruction memory — stores program instructions for fetch stage
 // =============================================================
 // imem.v — Instruction memory for RV32I
 // Read-only from the CPU's perspective, word-addressed via PC.
