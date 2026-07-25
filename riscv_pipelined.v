@@ -1,3 +1,6 @@
+// Top-level 5-stage pipelined RV32I core
+   // Integrates fetch, decode, execute, memory, and writeback stages
+   // with full hazard detection, forwarding, and branch handling
 // =============================================================
 // riscv_pipelined.v — 5-stage pipelined RV32I CPU (SKELETON)
 //
