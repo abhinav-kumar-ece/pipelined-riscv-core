@@ -1,3 +1,4 @@
+# Ignore Vivado build artifacts and simulation outputs
 # ============================================================
 # Vivado / Xilinx project .gitignore
 # Keeps: RTL source (.v), constraints (.xdc), hex programs (.hex),
