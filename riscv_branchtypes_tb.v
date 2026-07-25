@@ -1,3 +1,5 @@
+// Testbench for branch instruction types — verifies BEQ, BNE,
+   // BLT, BGE, BLTU, BGEU branch resolution and target computation
 // =============================================================
 // riscv_branchtypes_tb.v — tests BLT, BGE, BLTU, BGEU specifically
 //
