@@ -1,3 +1,4 @@
+// Testbench for data memory — verifies load/store operations
 // =============================================================
 // dmem_tb.v — testbench for dmem.v
 // Tests store/load at byte, halfword, and word granularity,
