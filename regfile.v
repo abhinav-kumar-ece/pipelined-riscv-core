@@ -1,3 +1,5 @@
+// Register file — 32 x 32-bit registers for RV32I
+   // Two read ports, one write port, x0 hardwired to zero
 // =============================================================
 // regfile.v — 32 x 32-bit register file for RV32I
 // 2 combinational read ports, 1 synchronous write port.
