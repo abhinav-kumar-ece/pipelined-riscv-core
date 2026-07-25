@@ -1,3 +1,4 @@
+// ALU module — supports ADD, SUB, AND, OR, XOR, SLT operations
 // =============================================================
 // alu.v — 32-bit ALU for RV32I
 // Combinational: output changes immediately when inputs change,
