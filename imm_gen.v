@@ -1,3 +1,5 @@
+// Immediate generator — extracts and sign-extends immediates
+   // from instruction fields based on instruction type (I/S/B/U/J)
 // =============================================================
 // imm_gen.v — Immediate generator for RV32I
 // Extracts and sign-extends the immediate field from an
