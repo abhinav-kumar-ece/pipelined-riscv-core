@@ -110,3 +110,37 @@ Core RTL design, verification, and synthesis/timing analysis are complete. A wri
 report/paper discussing methodology and results in full is in progress.
 ## Testing
    Verified with individual module testbenches (ALU, register file, memory, immediate generator, control unit) plus integration tests for branch types, pipeline flush, and loop execution.
+
+## Physical Design (RTL-to-GDSII)
+
+Full RTL-to-GDSII flow completed using LibreLane v3.0.5 (Yosys + OpenROAD +
+Magic + KLayout) targeting the SkyWater 130nm open PDK (sky130A,
+sky130_fd_sc_hd standard cell library), 100MHz clock target.
+
+Flow stages: synthesis -> floorplan -> placement -> clock tree synthesis ->
+routing -> static timing analysis -> GDSII streamout.
+
+See `physical_design/` for the LibreLane config and final GDSII output.
+
+**Layout (metal routing only, cell/text layers hidden):**
+
+![Routing layout](physical_design/images/layout_clean_routing.png)
+
+**Layout (full hierarchy, standard cell instances visible):**
+
+![Full layout](physical_design/images/layout_full_klayout.png)
+
+## UVM Verification Environment
+
+A self-checking UVM testbench for the pipelined core, built to specifically
+target the forwarding unit and hazard detection logic: sequence items,
+driver (backdoor-loads instructions into instruction memory), monitor,
+scoreboard with a golden functional RV32I reference model, agent, env, and
+test. Directed sequences construct EX/MEM forwarding, load-use stall, and
+MEM/WB forwarding scenarios by hand rather than relying on random coverage
+alone.
+
+See `uvm_verification/UVM_README.md` for full architecture details and
+known limitations. Written to standard UVM-1.2 syntax; not yet executed
+against a licensed simulator (no simulator access currently available) --
+structurally complete and ready to run once access is available.
