@@ -1,0 +1,16 @@
+{
+    "DESIGN_NAME": "riscv_pipelined_hazards",
+    "VERILOG_FILES": [
+        "dir::src/alu.v",
+        "dir::src/control_unit.v",
+        "dir::src/dmem.v",
+        "dir::src/imem.v",
+        "dir::src/imm_gen.v",
+        "dir::src/regfile.v",
+        "dir::src/riscv_pipelined_hazards.v"
+    ],
+    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD": 10,
+    "PDK": "sky130A",
+    "STD_CELL_LIBRARY": "sky130_fd_sc_hd"
+}
